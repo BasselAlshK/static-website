@@ -1,0 +1,25 @@
+{
+  "name": "lab.basselkassem.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulp_config.js",
+  "scripts": {
+    "start": "gulp serve",
+    "serve": "gulp serve",
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-mustache": "^3.0.1",
+    "gulp-sass": "^3.2.1"
+  },
+  "dependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-typescript": "^4.0.2",
+    "typescript": "^2.8.1"
+  }
+}
