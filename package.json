@@ -16,7 +16,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-filter": "^5.1.0",
     "gulp-mustache": "^3.0.1",
-    "gulp-sass": "^3.2.1"
+    "gulp-sass": "^3.2.1",
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {
     "gulp-clean": "^0.4.0",
