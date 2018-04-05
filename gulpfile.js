@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const mustache = require("gulp-mustache");
 const ts = require('gulp-typescript');
@@ -26,7 +27,12 @@ const paths = {
 
 gulp.task('sass', () => {
     return gulp.src(paths.src.css)
-        .pipe(sass())
+        .pipe(sass({ includePaths: ['src/scss'] })).on('error', sass.logError)
+        .pipe(autoprefixer({
+            browsers: ['last 5 versions'],
+            cascade: false
+        }))
+        .pipe(concat('index.css'))
         .pipe(gulp.dest(paths.dist.css))
         .pipe(browserSync.stream());
 });

@@ -1,3 +1,10 @@
+
+@import "./variables.scss";
+
+body{
+    background: $colorBg;
+    color: $colorWhite;
+}
 h1{
-    color: green;
+    color: $colorAquaBurst;
 }

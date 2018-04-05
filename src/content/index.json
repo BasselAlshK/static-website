@@ -1,4 +1,22 @@
 {
+    "welcome": "Welcome to Bassel's lab",
+    "experiments": [{
+            "id": 1,
+            "name": "exper1",
+            "description": "Lorem ipsum dolor sit amet, ius scaevola definitiones id, omnesque persequeris id sit, cu soleat voluptatum conclusionemque eam. At mel vidisse nominati antiopam, sit quas cetero persequeris no. Ut alia saepe theophrastus vim. Qui in bonorum abhorreant, dictas doctus reprehendunt quo ei, ex nam prima tation tractatos. Esse omittam cu has. Commodo admodum ad sed, sed eruditi impedit deleniti cu. At viris dicunt est. Eum an consul aperiam delicata. Est an diam vivendum, per labore debitis et. An doming volumus postulant eum, at nam minimum inciderint. Eam ea ferri adhuc graece.",
+            "technologies": ["tech1", "tech2", "tech3", "tech4"]
+        }, {
+            "id": 2,
+            "name": "exper2",
+            "description": "Lorem ipsum dolor sit amet, ius scaevola definitiones id, omnesque persequeris id sit, cu soleat voluptatum conclusionemque eam. At mel vidisse nominati antiopam, sit quas cetero persequeris no. Ut alia saepe theophrastus vim. Qui in bonorum abhorreant, dictas doctus reprehendunt quo ei, ex nam prima tation tractatos. Esse omittam cu has. Commodo admodum ad sed, sed eruditi impedit deleniti cu. At viris dicunt est. Eum an consul aperiam delicata. Est an diam vivendum, per labore debitis et. An doming volumus postulant eum, at nam minimum inciderint. Eam ea ferri adhuc graece.",
+            "technologies": ["tech1", "tech2", "tech3", "tech4"]
+        }, {
+            "id": 3,
+            "name": "exper3",
+            "description": "Lorem ipsum dolor sit amet, ius scaevola definitiones id, omnesque persequeris id sit, cu soleat voluptatum conclusionemque eam. At mel vidisse nominati antiopam, sit quas cetero persequeris no. Ut alia saepe theophrastus vim. Qui in bonorum abhorreant, dictas doctus reprehendunt quo ei, ex nam prima tation tractatos. Esse omittam cu has. Commodo admodum ad sed, sed eruditi impedit deleniti cu. At viris dicunt est. Eum an consul aperiam delicata. Est an diam vivendum, per labore debitis et. An doming volumus postulant eum, at nam minimum inciderint. Eam ea ferri adhuc graece.",
+            "technologies": [ "tech1", "tech2", "tech3", "tech4" ]
+        }
+    ],
     "app": "Hello Gulp!OO",
     "header": "I am header!!",
     "footer": "I am footer!!"

@@ -1,2 +1,17 @@
-<h1>{{app}}</h1>
-<p>Bassle</p>
+<div class="experiments">
+    {{#experiments}}
+        <div class="experiment">
+            <div class="experiment_name">
+                {{name}}
+            </div>
+            <div class="experiment_description">
+                {{description}}
+            </div>
+            <div class="experiment_technologies">
+                {{#technologies}}
+                    <span class="technology">{{.}}</span>
+                {{/technologies}}
+            </div>
+        </div>
+    {{/experiments}}
+</div>
