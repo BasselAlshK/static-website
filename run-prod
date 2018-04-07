@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# detect interactive or non-interactive running of the script
+if tty 2>&1 > /dev/null ; then
+        INTERACTIVE="-it"
+else
+        INTERACTIVE=""
+        echo "No terminal detected, running in non-interactive mode"
+fi
+
+IMAGE="bassel/web-app"
+USERID=$(id -u)
+GROUPID=$(id -g)
+# internal mountpoint. DO NOT CHANGE!
+WORKDIR="/usr/node-app"
+RUNCOMMAND="docker"
+RUNPARAMETERS=("run" $INTERACTIVE "--rm" -v "$(pwd):$WORKDIR" "$IMAGE" "npm" "run" "build")
+
+$RUNCOMMAND "${RUNPARAMETERS[@]}"
+# function help {
+
+# 	echo "==== frontend build helper ===="
+
+# 	case $COMMAND in
+# 		run)
+# 			echo "$0 run command"
+# 			echo ""
+# 			echo "Startet command im Projektverzeichnis innerhalb des Containers"
+# 			exit
+# 			;;
+# 	esac
+
+
+# 	echo "$0 [COMMAND]"
+# 	echo ""
+# 	echo "Commands"
+# 	echo ""
+# 	echo "== build =="
+# 	echo "Startet gulp build im Projektverzeichnis im Container"
+# 	echo ""
+# 	echo "== build:dev =="
+# 	echo "Startet gulp build:dev im Projektverzeichnis im Container"
+# 	echo ""
+# 	echo "== watch =="
+# 	echo "Startet gulp watch im Projektverzeichnis im Container"
+# 	echo ""
+# 	echo ""
+# 	echo "== update =="
+# 	echo "Holt die neuste Version des Docker Images von Dockerhub"
+# 	echo ""
+# 	echo ""
+# 	return
+# }
+
+# COMMAND=$1
+
+# case $COMMAND in
+# 	update)
+# 		docker pull $IMAGE
+# 		;;
+# 	run)
+# 		if [ "$#" -lt 2 ] ; then
+# 			help $COMMAND
+# 			exit 1
+# 		fi
+# 		shift
+# 		$RUNCOMMAND "${RUNPARAMETERS[@]}" $@
+# 		;;
+# 	*)
+# 		if [ "$#" -lt 1 ] ; then
+# 			help
+# 			exit 1
+# 		fi
+# 		$RUNCOMMAND "${RUNPARAMETERS[@]}" npm run $@
+# 		;;
+# esac

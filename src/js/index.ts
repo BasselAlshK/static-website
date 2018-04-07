@@ -9,7 +9,7 @@ const documentReady = () => {
     setDatePlaceHoler();
 };
 
-if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {
+if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.onscroll)) {
     documentReady();
 } else {
     document.addEventListener("DOMContentLoaded", documentReady);
