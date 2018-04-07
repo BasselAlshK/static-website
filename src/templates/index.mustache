@@ -12,6 +12,7 @@
     <link rel="icon" href="favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="vendor/css/normalize.css">
     <link rel="stylesheet" href="vendor/css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
   <body>
@@ -20,12 +21,17 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    {{> ./partials/header }}
-    <h1 class="">{{welcome}}</h1>
-    {{> ./app }}
-    {{> ./partials/footer }}
+    <div class="webSiteRoot">
+       {{> ./partials/header }}
+       <div class="appRoot">
+        {{> ./app }}
+       </div>
+      {{> ./partials/footer }}
+    </div>
+   
 
     <script src="vendor/js/modernizr-3.5.0.min.js"></script>
+    <script src="assets/js/rx.all.min.js"></script>
     <script src="js/bundle.js"> </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

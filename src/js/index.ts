@@ -1,7 +1,17 @@
-console.log('hey!!!');
-const myFunc = (par: string): void => {
-    console.log(par);
+const setDatePlaceHoler = () => {
+    const dateNow = new Date();
+    const yearNow = dateNow.getFullYear();
+    const datePlaceholer = document.getElementById('datePlaceholer');
+    datePlaceholer.innerHTML = yearNow.toString();
+}
+
+const documentReady = () => {
+    setDatePlaceHoler();
 };
-myFunc('I am ts');
-let t1;
+
+if (document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {
+    documentReady();
+} else {
+    document.addEventListener("DOMContentLoaded", documentReady);
+}
 

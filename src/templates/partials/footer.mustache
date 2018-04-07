@@ -1,2 +1,6 @@
-
-<h1>{{footer}}</h1>
+<div class="footer">
+    <span class="footer_item" id="datePlaceholer"></span>
+  {{#footer}}
+        <a class="footer_item" href="{{url}}" target="_blank"><i class="{{className}}"></i></a>
+    {{/footer}}
+</div>

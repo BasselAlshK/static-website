@@ -12,7 +12,7 @@ IMAGE="bassel/web-app"
 USERID=$(id -u)
 GROUPID=$(id -g)
 # internal mountpoint. DO NOT CHANGE!
-WORKDIR="/usr/web-app"
+WORKDIR="/usr/node-app"
 RUNCOMMAND="docker"
 RUNPARAMETERS=("run" $INTERACTIVE "--rm" -v "$(pwd):$WORKDIR" "$IMAGE" "npm" "run" "serve")
 

@@ -16,12 +16,14 @@ const paths = {
         css: 'src/scss/*.scss',
         js: 'src/**/*.ts',
         templates: './src/templates/**/*.mustache',
-        contentPath: './src/content/index.json'
+        contentPath: './src/content/index.json',
+        assets: './src/assets/**/*',
     },
     dist: {
         css: 'public/css',
         js: 'public/js',
         templates: 'public',
+        assets: 'public/assets',
     }
 };
 
@@ -56,8 +58,12 @@ gulp.task('clean', () => {
         .pipe(fileFilter)
         .pipe(clean());
 });
+gulp.task('copy', () => {
+    gulp.src(paths.src.assets)
+    .pipe(gulp.dest(paths.dist.assets));
+});
 gulp.task('serve', (done) => {
-    runSequence('clean', 'templates', 'sass', 'js', () => {
+    runSequence('clean', 'copy' ,'templates', 'sass', 'js', () => {
         browserSync.init({
             server: "./public"
         });

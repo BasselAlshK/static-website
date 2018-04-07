@@ -1,10 +1,34 @@
 
 @import "./variables.scss";
-
+@import "./app.scss";
 body{
-    background: $colorBg;
+    background-image: url(../assets/svg/background.svg);
+    background-color: $colorBlack;
     color: $colorWhite;
+    font-family: "calibreLight";
+    font-size: 1.2em;
 }
-h1{
+h1, h2, h3, h4, h5{
     color: $colorAquaBurst;
+    font-family: "quanticoRegular";
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:focus:visited{
+    color: inherit;
+    text-decoration: none;
+}
+.webSiteRoot{
+    max-width: $maxContentWidth;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.off{
+    display: none;
+}
+.on{
+    display: block;
 }

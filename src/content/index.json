@@ -2,22 +2,47 @@
     "welcome": "Welcome to Bassel's lab",
     "experiments": [{
             "id": 1,
-            "name": "exper1",
-            "description": "Lorem ipsum dolor sit amet, ius scaevola definitiones id, omnesque persequeris id sit, cu soleat voluptatum conclusionemque eam. At mel vidisse nominati antiopam, sit quas cetero persequeris no. Ut alia saepe theophrastus vim. Qui in bonorum abhorreant, dictas doctus reprehendunt quo ei, ex nam prima tation tractatos. Esse omittam cu has. Commodo admodum ad sed, sed eruditi impedit deleniti cu. At viris dicunt est. Eum an consul aperiam delicata. Est an diam vivendum, per labore debitis et. An doming volumus postulant eum, at nam minimum inciderint. Eam ea ferri adhuc graece.",
-            "technologies": ["tech1", "tech2", "tech3", "tech4"]
+            "name": "Tiles Coloring Game",
+            "github": "https://github.com/BasselAlshK/coloring-tiles",
+            "labUrl": "https://lab.basselkassem.com/coloring-tiles/",
+            "description": {
+                "intro": "This project is developed to test different apporaches to solve tiles game and compare the results. The stages of developing this project:",
+                "objectives": ["Try A*, Dijkstra algorithm and Best First Search algorithms to Solve the game", "Develop UI to visualize results", "Generate statistics and Compare them"],
+                "conclusion": "We found that A* combines the optimality of Dijkstra and the efficiency of Best First Search."
+            },
+            "technologies": ["algorithms", "A_star", "backtracking", "angular2"]
         }, {
             "id": 2,
-            "name": "exper2",
-            "description": "Lorem ipsum dolor sit amet, ius scaevola definitiones id, omnesque persequeris id sit, cu soleat voluptatum conclusionemque eam. At mel vidisse nominati antiopam, sit quas cetero persequeris no. Ut alia saepe theophrastus vim. Qui in bonorum abhorreant, dictas doctus reprehendunt quo ei, ex nam prima tation tractatos. Esse omittam cu has. Commodo admodum ad sed, sed eruditi impedit deleniti cu. At viris dicunt est. Eum an consul aperiam delicata. Est an diam vivendum, per labore debitis et. An doming volumus postulant eum, at nam minimum inciderint. Eam ea ferri adhuc graece.",
-            "technologies": ["tech1", "tech2", "tech3", "tech4"]
-        }, {
-            "id": 3,
-            "name": "exper3",
-            "description": "Lorem ipsum dolor sit amet, ius scaevola definitiones id, omnesque persequeris id sit, cu soleat voluptatum conclusionemque eam. At mel vidisse nominati antiopam, sit quas cetero persequeris no. Ut alia saepe theophrastus vim. Qui in bonorum abhorreant, dictas doctus reprehendunt quo ei, ex nam prima tation tractatos. Esse omittam cu has. Commodo admodum ad sed, sed eruditi impedit deleniti cu. At viris dicunt est. Eum an consul aperiam delicata. Est an diam vivendum, per labore debitis et. An doming volumus postulant eum, at nam minimum inciderint. Eam ea ferri adhuc graece.",
-            "technologies": [ "tech1", "tech2", "tech3", "tech4" ]
+            "name": "Docker with Gulp",
+            "github": "https://github.com/BasselAlshK/static-website",
+            "labUrl": "https://lab.basselkassem.com/",
+             "description": {
+                "intro": "The aim of this project is provide a boilerplate to develop static websites. It uses:",
+                "objectives": ["gulp under docker in development and production", "SCSS", "Mustache as templating engine"],
+                "conclusion": "There is no need to install any runime locally. You just need Docker."
+            },
+            "technologies": ["docker", "gulp", "mustache", "browserSync", "scss"]
         }
     ],
-    "app": "Hello Gulp!OO",
-    "header": "I am header!!",
-    "footer": "I am footer!!"
+    "footer": [{
+        "name": "instagram",
+        "url": "https://www.instagram.com/bassel.sh.k/",
+        "className": "fab fa-instagram"
+    }, {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/bassel-sh-k/",
+        "className": "fab fa-linkedin"
+    },{
+        "name": "github",
+        "url": "https://github.com/basselAlshK",
+        "className": "fab fa-github-square"
+    },{
+        "name": "twitter",
+        "url": "https://twitter.com/basselshk",
+        "className": "fab fa-twitter-square"
+    },{
+        "name": "facebook",
+        "url": "https://www.facebook.com/BasselShK",
+        "className": "fab fa-facebook-square"
+    }]
 }

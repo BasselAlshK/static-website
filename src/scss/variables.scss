@@ -1,5 +1,16 @@
+@font-face {
+	font-family: "calibreLight";
+	src: url("../assets/fonts/calibre-light.woff") format("woff");
+}
+@font-face {
+	font-family: "quanticoRegular";
+	src: url(../assets/fonts/quantico-regular.ttf) format("truetype");
+}
+/* layout*/
+$maxContentWidth: 800px;
+/* color */
 $colorAquaBurst: #00dffc;
-$colorBg: #000;
+$colorBlack: #000;
 $colorWhite: #fff;
 $colorLioh4: #005f6b;
 $colorGray: #b2b2b2;

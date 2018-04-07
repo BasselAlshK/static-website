@@ -1,0 +1,17 @@
+@import "./variables.scss";
+.footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-size: 1em;
+    color: $colorGray;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footer_item{
+    margin: 0 4px;
+}
+.footer_item:hover{
+    color: $colorLioh4;
+}

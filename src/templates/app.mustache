@@ -1,15 +1,43 @@
 <div class="experiments">
     {{#experiments}}
-        <div class="experiment">
+        <div class="experiment" id="exp{{id}}">
             <div class="experiment_name">
-                {{name}}
+                <h2 class="name_title">{{name}}</h2>
+                <div class="name_control">
+                    <div class="control_item control_itemOpen" onclick="openDescriptioncHandler('{{id}}')" >
+                        <i class="fas fa-info-circle" id="openDescriptionBtn{{id}}"></i>
+                        <i class="fas fa-times-circle off" id="closeDescriptionBtn{{id}}"></i>
+                    </div>
+                    <a class="control_item" href="{{labUrl}}" target="_blank">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                    <a class="control_item" href="{{github}}" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </div>
             </div>
-            <div class="experiment_description">
-                {{description}}
-            </div>
+            <article class="experiment_description" id="description{{id}}">
+                {{#description}}
+                    <div class="description_into">
+                        {{intro}}
+                    </div>
+                    <div class="description_objectives">
+                        <ul>
+                            {{#objectives}}
+                                <li>
+                                    {{.}}
+                                </li>
+                            {{/objectives}}
+                        </ul>
+                    </div>
+                    <div class="description_conclusion">
+                        {{conclusion}}
+                    </div>
+                {{/description}}
+            </article>
             <div class="experiment_technologies">
                 {{#technologies}}
-                    <span class="technology">{{.}}</span>
+                    <h3 class="technology">#{{.}}</h3>
                 {{/technologies}}
             </div>
         </div>

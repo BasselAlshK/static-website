@@ -1,0 +1,12 @@
+@import "./variables.scss";
+.header{
+    background-color: $colorLioh4;
+    background-image: url(../assets/svg/background_black.svg);
+    text-align: center;
+    padding: 64px 8px;
+    margin-top: 16px;
+    font-size: 1.4em;
+    h1{
+        color: $colorGray;
+    }
+}
