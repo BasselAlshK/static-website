@@ -41,4 +41,4 @@ this will create a folder `public` which contains minfied and optimized files re
 # User Guide
 to be continued
 ## License
-[MIT](LICENSE)
+[GNU](LICENSE)
