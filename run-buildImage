@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# detect interactive or non-interactive running of the script
+if tty 2>&1 > /dev/null ; then
+        INTERACTIVE="-it"
+else
+        INTERACTIVE=""
+        echo "No terminal detected, running in non-interactive mode"
+fi
+
+IMAGE="bassel/web-app"
+RUNCOMMAND="docker"
+RUNPARAMETERS=("build" "--rm" "-t" "$IMAGE" ".")
+INSTALLPARAMETERS=("run" "-it" "--rm" "-v" "$(pwd):/usr/node-app" "$IMAGE" "npm" "install")
+
+$RUNCOMMAND "${RUNPARAMETERS[@]}"
+$RUNCOMMAND "${INSTALLPARAMETERS[@]}"

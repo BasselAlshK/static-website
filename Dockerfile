@@ -5,9 +5,7 @@ WORKDIR /usr/node-app
 COPY package.json /usr/node-app
 COPY package-lock.json /usr/node-app
 
-RUN npm install
 RUN npm install -g gulp
-RUN npm install --save gulp
 
 COPY . /usr/node-app
 
