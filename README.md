@@ -1,5 +1,5 @@
 # Static Website Boilerplate
-This boilterplate is based on [`html5boilerplate`](https://html5boilerplate.com/). You need to have [Docker](https://www.docker.com/) installed and that is it! you are ready to go.
+This boilterplate is based on [`html5boilerplate`](https://html5boilerplate.com/). You need to have [Docker](https://www.docker.com/) installed and that is it! you are ready to go. Here is an [example](https://lab.basselkassem.com/) of using this boilerplate
 ## Features
     
 - [Gulp](https://gulpjs.com/)
