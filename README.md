@@ -25,7 +25,10 @@ git clone https://github.com/BasselAlshK/static-website.git
 Build Docker image & run docker container to install the dependencies
 ```sh
 cd static-website
-docker run -it --rm -v $(pwd):/usr/node-app bassel/web-app npm install
+```
+make `run-buildImage` file executable, then run:
+```sh
+./run-buildImage
 ```
 To run this project in development mode; make `run-dev` file executable, then run:
 ```sh
@@ -38,6 +41,11 @@ To run this project in production mode, make `run-prod` file executable, then ru
 ./run-prod
 ```
 this will create a folder `public` which contains minfied and optimized files ready to be deployed. 
+
+#### to install npm `newPackage`, run:
+```sh
+docker run -it --rm -v $(pwd):/usr/node-app bassel/web-app npm install `newPackage`
+```
 # User Guide
 to be continued
 ## License
