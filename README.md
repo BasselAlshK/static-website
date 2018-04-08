@@ -1,5 +1,6 @@
 # Static Website Boilerplate
-This boilterplate is built using Gulp. This boilterplate features following:
+This boilterplate is based on [`html5boilerplate`](https://html5boilerplate.com/). You need to have [Docker](https://www.docker.com/) installed and that is it! you are ready to go.
+![Alt Text](https://media.giphy.com/media/Rbt3HJ6pSpyco/giphy.gif)
 ## Features
     
 - [Gulp](https://gulpjs.com/)
@@ -38,6 +39,7 @@ To run this project in production mode, make `run-prod` file executable, then ru
 ./run-prod
 ```
 this will create a folder `public` which contains minfied and optimized files ready to be deployed. 
-
+# User Guide
+to be continued
 ## License
 [MIT](LICENSE)
